@@ -1,152 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>900</width>
-    <height>700</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>Редактор изображений</string>
-  </property>
-  <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QPushButton" name="loadButton">
-        <property name="text">
-         <string>Загрузить изображение</string>
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>900</width>
+                <height>700</height>
+            </rect>
         </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+        <property name="windowTitle">
+            <string>Редактор изображений</string>
         </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QLabel" name="fileNameLabel">
-        <property name="text">
-         <string>Изображение не загружено</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QGroupBox" name="channelGroup">
-        <property name="title">
-         <string>Цветовые каналы</string>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_2">
-         <item>
-          <widget class="QRadioButton" name="originalRadio">
-           <property name="text">
-            <string>Оригинал (RGB)</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="redChannelRadio">
-           <property name="text">
-            <string>Красный канал</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="greenChannelRadio">
-           <property name="text">
-            <string>Зеленый канал</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="blueChannelRadio">
-           <property name="text">
-            <string>Синий канал</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="grayscaleRadio">
-           <property name="text">
-            <string>Оттенки серого</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item>
-       <widget class="QGroupBox" name="rotationGroup">
-        <property name="title">
-         <string>Поворот</string>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <widget class="QPushButton" name="rotateLeftButton">
-           <property name="text">
-            <string>Повернуть на 90° влево</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="rotateRightButton">
-           <property name="text">
-            <string>Повернуть на 90° вправо</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="resetRotationButton">
-           <property name="text">
-            <string>Сбросить поворот</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <widget class="QLabel" name="imageLabel">
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="text">
-       <string>Загрузите изображение</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
- </widget>
- <resources/>
- <connections/>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout">
+                        <item>
+                            <widget class="QPushButton" name="loadButton">
+                                <property name="text">
+                                    <string>Загрузить изображение</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <spacer name="horizontalSpacer">
+                                <property name="orientation">
+                                    <enum>Qt::Horizontal</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                    <size>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="fileNameLabel">
+                                <property name="text">
+                                    <string>Изображение не загружено</string>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </item>
+                <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_2">
+                        <item>
+                            <widget class="QGroupBox" name="channelGroup">
+                                <property name="title">
+                                    <string>Цветовые каналы</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_2">
+                                    <item>
+                                        <widget class="QRadioButton" name="originalRadio">
+                                            <property name="text">
+                                                <string>Оригинал (RGB)</string>
+                                            </property>
+                                            <property name="checked">
+                                                <bool>true</bool>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QRadioButton" name="redChannelRadio">
+                                            <property name="text">
+                                                <string>Красный канал</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QRadioButton" name="greenChannelRadio">
+                                            <property name="text">
+                                                <string>Зеленый канал</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QRadioButton" name="blueChannelRadio">
+                                            <property name="text">
+                                                <string>Синий канал</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QRadioButton" name="grayscaleRadio">
+                                            <property name="text">
+                                                <string>Оттенки серого</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QGroupBox" name="rotationGroup">
+                                <property name="title">
+                                    <string>Поворот</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_3">
+                                    <item>
+                                        <widget class="QPushButton" name="rotateLeftButton">
+                                            <property name="text">
+                                                <string>Повернуть на 90° влево</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="rotateRightButton">
+                                            <property name="text">
+                                                <string>Повернуть на 90° вправо</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="resetRotationButton">
+                                            <property name="text">
+                                                <string>Сбросить поворот</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </widget>
+                        </item>
+                    </layout>
+                </item>
+                <item>
+                    <widget class="QLabel" name="imageLabel">
+                        <property name="frameShape">
+                            <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="text">
+                            <string>Загрузите изображение</string>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="wordWrap">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+    <resources/>
+    <connections/>
 </ui>
